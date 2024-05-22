@@ -10,11 +10,13 @@ public class UserRegistration {
  if (users.containsKey(username)) {
  return false; // ⽤户已存在
 
-  }
+ }
  users.put(username, password);
  return true;
  }
  public boolean login(String username, String password) {
- return users.containsKey(username) && users.get(username).equals(password);
- }
+ return users.containsKey(username) &&
+
+                users.get(username).equals(password);
+  }
 }
